@@ -1,0 +1,160 @@
+@use "../home-common/variables" as *;
+@use "../home-common/mixins" as *;
+
+.home {
+    position: relative;
+    padding-bottom: 970px;
+}
+
+.home__container {
+    display: flex;
+    max-width: 1600px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 50px;
+    position: relative;
+    z-index: 10;
+}
+
+.home__right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-end;
+}
+
+.home__container-information {
+    display: flex;
+    justify-content: end;
+    gap: 18px;
+    align-items: center;
+}
+
+.home__content-navigation {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+
+h1, h2, p, a{
+    color: $color-white;
+    margin: 0px;
+    padding: 0px;
+}
+
+.links {
+    font-weight: $fw-bold;
+    font-size: $fs-regular;
+}
+
+.change-language {
+    width: 33px;
+    height: 25px;
+    background-color: transparent;
+    border: 0px solid;
+    color: $color-white;
+    letter-spacing: 1px;
+    font-weight: $fw-bold;
+    font-size: $fs-xs;
+}
+
+.home__language-switcher {
+    display: flex;
+    gap: 0px;
+    align-self: baseline;
+}
+
+.active {
+    background-color: $bc-active-button;
+    border-radius: 8px;
+}
+
+.home__street {
+    position: relative;
+}
+
+.home__street::before {
+    @include dot;
+    left: -12px;
+}
+
+.home__street::after {
+    @include dot;
+    right: -12px;
+}
+
+.home__number {
+    position: relative;
+    font-weight: $fw-bold;
+}
+
+.home__number::after{
+    @include dot;
+    right: -11px;
+}
+
+.home__hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.home__hero-content {
+    position: relative;
+}
+
+.home__hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    width: 100vw;
+}
+
+.home__hero-scroll {
+    z-index: 1;
+}
+
+.home__hero-logo {
+    max-width: 100%;
+}
+
+.home__hero-arrow {
+    display: block;
+    content: "";
+    width: 42px;
+    height: 42px;
+    border: 2px solid #FFFFFF;
+    border-color: rgba($color: $color-white, $alpha: 0.5);
+    background-color: transparent;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 10px; 
+        height: 10px;
+        border-right: 2px solid $color-white;  
+        border-bottom: 2px solid $color-white;  
+        transform: translate(-50%, -70%) rotate(45deg);
+    }
+}
+

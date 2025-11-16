@@ -1,0 +1,271 @@
+body {
+  background-color: #323264;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+}
+
+button {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.home {
+  position: relative;
+  padding-bottom: 970px;
+}
+
+.home__container {
+  display: flex;
+  max-width: 1600px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-top: 50px;
+  position: relative;
+  z-index: 10;
+}
+
+.home__right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-end;
+}
+
+.home__container-information {
+  display: flex;
+  justify-content: end;
+  gap: 18px;
+  align-items: center;
+}
+
+.home__content-navigation {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+}
+
+h1, h2, p, a {
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
+
+.links {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.change-language {
+  width: 33px;
+  height: 25px;
+  background-color: transparent;
+  border: 0px solid;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.home__language-switcher {
+  display: flex;
+  gap: 0px;
+  align-self: baseline;
+}
+
+.active {
+  background-color: #F0145A;
+  border-radius: 8px;
+}
+
+.home__street {
+  position: relative;
+}
+
+.home__street::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #E6E6F0;
+  top: 5px;
+  left: -12px;
+}
+
+.home__street::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #E6E6F0;
+  top: 5px;
+  right: -12px;
+}
+
+.home__number {
+  position: relative;
+  font-weight: 700;
+}
+
+.home__number::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #E6E6F0;
+  top: 5px;
+  right: -11px;
+}
+
+.home__hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.home__hero-content {
+  position: relative;
+}
+
+.home__hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  width: 100vw;
+}
+
+.home__hero-scroll {
+  z-index: 1;
+}
+
+.home__hero-logo {
+  max-width: 100%;
+}
+
+.home__hero-arrow {
+  display: block;
+  content: "";
+  width: 42px;
+  height: 42px;
+  border: 2px solid #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+}
+.home__hero-arrow::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: translate(-50%, -70%) rotate(45deg);
+}
+
+.main__services-left {
+  position: relative;
+}
+.main__services-left::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 303px;
+  position: absolute;
+  top: -14.5px;
+  right: -67px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main__container-services {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  column-gap: 124px;
+}
+
+.main__services-left {
+  display: flex;
+  text-align: end;
+}
+
+.item {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 100%;
+  color: #B3B3BA;
+  user-select: none;
+}
+.item:hover {
+  color: #F0145A;
+}
+
+.main__services-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 38px;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #EF8080 0%, #F0145A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main__services-title {
+  font-size: 30px;
+  line-height: 100%;
+  font-weight: 700;
+}
+
+.main__services-text {
+  line-height: 30px;
+  font-size: 19px;
+  padding-top: 37px;
+}
+
+.main__services-right {
+  align-content: center;
+}
+
+/*# sourceMappingURL=general.css.map */

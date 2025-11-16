@@ -1,0 +1,25 @@
+$bc-header: #323264;
+$bc-active-button: #F0145A;
+$bc-dot: #E6E6F0;
+$bc-line: rgba(255, 255, 255, 0.3);;
+
+$font-primary: "Montserrat", sans-serif;
+$fw-regular: 400;
+$fw-bold: 700;
+
+$fs-regular: 16px;
+$fs-xs: 12px;
+$fs-xxl: 38px;
+$fs-xl: 30px;
+$fs-l: 19px;
+
+$color-white: white;
+$color-list: #B3B3BA;
+$gradient-text-red-start: #EF8080;
+$gradient-text-red-end:   #F0145A;
+
+$gradient-text-red: linear-gradient(
+  90deg,
+  $gradient-text-red-start 0%,
+  $gradient-text-red-end 100%
+);

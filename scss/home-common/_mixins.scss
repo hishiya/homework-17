@@ -1,0 +1,12 @@
+@use "./variables" as *;
+
+@mixin dot ($top: 5px) {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $bc-dot; 
+    top: $top;
+}

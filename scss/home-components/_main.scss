@@ -1,0 +1,73 @@
+@use "../home-common/variables" as *;
+@use "../home-common/mixins" as *;
+
+.main__services-left  {
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 4px;
+        height: 303px;
+        position: absolute;
+        top: -14.5px;
+        right: -67px;
+        background-color: $bc-line;
+    }
+}
+
+
+
+.main__container-services {
+    max-width: 1360px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    column-gap: 124px;
+}
+
+.main__services-left {
+    display: flex;
+    text-align: end;
+}
+
+.item {
+    font-size: $fs-xxl;
+    font-weight: $fw-bold;
+    line-height: 100%;
+    color: $color-list;
+    user-select: none;
+
+    &:hover {
+        color: $bc-active-button;
+    }
+}
+
+
+.main__services-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 38px;
+}
+
+.gradient-text {
+    background: $gradient-text-red;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main__services-title {
+    font-size: $fs-xl;
+    line-height: 100%;
+    font-weight: $fw-bold;
+}
+
+.main__services-text {
+    line-height: 30px;
+    font-size: $fs-l;
+    padding-top: 37px;
+}
+
+.main__services-right {
+    align-content: center;
+}

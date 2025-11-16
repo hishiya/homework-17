@@ -1,0 +1,10 @@
+@use "./home-common/background";
+@use "./home-common/breakpoints";
+@use "./home-common/fonts";
+@use "./home-common/mixins";
+@use "./home-common/reset";
+@use "./home-common/variables";
+
+@use "./home-components/footer";
+@use "./home-components/header";
+@use "./home-components/main";
