@@ -12,9 +12,12 @@ $fs-xs: 12px;
 $fs-xxl: 38px;
 $fs-xl: 30px;
 $fs-l: 19px;
+$mini-title: 22px;
 
 $color-white: white;
 $color-list: #B3B3BA;
+$color-aqua: #24A3FF;
+
 $gradient-text-red-start: #EF8080;
 $gradient-text-red-end:   #F0145A;
 
@@ -22,4 +25,13 @@ $gradient-text-red: linear-gradient(
   90deg,
   $gradient-text-red-start 0%,
   $gradient-text-red-end 100%
+);
+
+$red-primary: #F0145A; 
+$red-secondary: #EF8080; 
+
+$red-text-gradient: linear-gradient(
+    90deg,
+    $red-primary 10%, 
+    $red-secondary 80% 
 );

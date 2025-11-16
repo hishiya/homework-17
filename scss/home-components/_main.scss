@@ -1,7 +1,7 @@
 @use "../home-common/variables" as *;
 @use "../home-common/mixins" as *;
 
-.main__services-left  {
+.main__services-left {
     position: relative;
 
     &::after {
@@ -70,4 +70,48 @@
 
 .main__services-right {
     align-content: center;
+}
+
+.advantages {
+    padding: 102px 0;
+
+    &__container {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: $fs-xxl;
+        font-weight: $fw-bold;
+        line-height: 100%;
+        margin-bottom: 60px;
+        background: $red-text-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px 40px;
+    }
+}
+
+.adv-card__title {
+    color: $color-aqua;
+    font-size: $mini-title;
+    font-weight: $fw-bold;
+    line-height: 100%;
+}
+
+.adv-card__text {
+    font-size: $fs-regular;
+    line-height: 26px;
+}
+
+.img-card {
+    border: 1px solid black;
+    border-radius: 24px;
+    background-color: white;
+    padding: 14px;
 }
