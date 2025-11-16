@@ -1,5 +1,15 @@
 @use "./variables" as *;
 
 body {
-    background-color: $bc-header;
+    margin: 0;
+    background: radial-gradient(circle at bottom left, #643E72 0%, #323264 80%);
+}
+
+.review,
+.clients{
+    background-color: white; // або #fff, як у макеті
+}
+
+.publications {
+    background-color: pink;
 }

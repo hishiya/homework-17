@@ -102,6 +102,8 @@
     font-size: $mini-title;
     font-weight: $fw-bold;
     line-height: 100%;
+    margin-top: 35px;
+    margin-bottom: 15px;
 }
 
 .adv-card__text {
@@ -110,8 +112,195 @@
 }
 
 .img-card {
-    border: 1px solid black;
     border-radius: 24px;
     background-color: white;
     padding: 14px;
+}
+
+.review {
+    padding: 80px 0;
+}
+
+.review__container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.review__card {
+    display: grid;
+    grid-template-columns: auto 1fr; // фото + контент
+    align-items: start;
+    gap: 30px;
+    border-radius: 12px;
+
+    background: #F5F5FA; // тимчасово білий, як у макеті
+}
+
+.review__photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.review__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.review__dots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.review__dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    border: none;
+}
+
+.review__dot--active {
+    background: $color-aqua; // тимчасово синій як у макеті
+}
+
+.review__label {
+    font-weight: $fw-bold;
+    font-size: $fs-s;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color-aqua;
+}
+
+.review__title {
+    font-size: $fs-xxl;
+    font-weight: $fw-bold;
+    line-height: 1.2;
+    margin: 0;
+    background: $rose-red-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.review__name {
+    font-size: $fs-regular;
+    font-weight: $fw-bold;
+    line-height: 100%;
+    color: $color-grey;
+    padding-bottom: 6px;
+}
+
+.review__position {
+    font-size: $fs-s;
+    line-height: 22px;
+    color: $color-grey;
+}
+
+.container__partner {
+    margin-top: 43px;
+}
+
+
+.clients__container {
+    max-width: 1720px;
+    margin: 0 auto;
+}
+
+.clients__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+
+
+.clients__title {
+    text-align: center;
+    color: $title-clients;
+    letter-spacing: 1px;
+    font-size: $fs-s;
+    line-height: 100%;
+    font-weight: $fw-bold;
+    margin-bottom: 30px;
+}
+
+.publications {
+    &__container {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    &__label {
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+}
+
+.pub-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.pub-card__image img {
+    width: 100%;
+    display: block;
+}
+
+.pub-card__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.publications__label {
+    font-size: $fs-s;
+    letter-spacing: 1px;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-weight: $fw-bold;
+    color: $color-aqua;
+}
+
+.pub-card__title {
+    font-size: $fs-regular;
+    line-height: 100%;
+    font-weight: $fw-bold;
+    color: $color-aqua;
+}
+
+.pub-card__date {
+    font-size: $fs-xs;
+    letter-spacing: 1px;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-weight: $fw-bold;
+    color: $color-grey;
+}
+
+.pub-card__text {
+    font-size: $fs-s;
+    line-height: 22px;
+    color: black;
+}
+
+.publications__title {
+    background: $publications-title-gradient;
+    line-height: 120%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: $fs-xxl;
+    font-weight: $fw-bold;
 }

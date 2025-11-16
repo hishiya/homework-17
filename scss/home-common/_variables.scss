@@ -2,12 +2,14 @@ $bc-header: #323264;
 $bc-active-button: #F0145A;
 $bc-dot: #E6E6F0;
 $bc-line: rgba(255, 255, 255, 0.3);;
+$bc-publications-content: white;
 
 $font-primary: "Montserrat", sans-serif;
 $fw-regular: 400;
 $fw-bold: 700;
 
 $fs-regular: 16px;
+$fs-s: 14px;
 $fs-xs: 12px;
 $fs-xxl: 38px;
 $fs-xl: 30px;
@@ -17,6 +19,8 @@ $mini-title: 22px;
 $color-white: white;
 $color-list: #B3B3BA;
 $color-aqua: #24A3FF;
+$color-grey: #B3B3BA;
+$title-clients: #323264;
 
 $gradient-text-red-start: #EF8080;
 $gradient-text-red-end:   #F0145A;
@@ -34,4 +38,28 @@ $red-text-gradient: linear-gradient(
     90deg,
     $red-primary 10%, 
     $red-secondary 80% 
+);
+
+$bg-main: #323264;   
+$bg-accent: #643E72; 
+$gradient-supersoft: radial-gradient(
+    circle at bottom left,
+    $bg-accent 0%,
+    $bg-main 60%
+);
+
+$rose-red-start: #F0145A;
+$rose-red-end:   #EF8080;
+
+$rose-red-gradient: linear-gradient(
+    90deg,
+    $rose-red-start 0%,
+    $rose-red-start 45%,
+    $rose-red-end 100%
+);
+
+$publications-title-gradient: linear-gradient(
+    90deg,
+    #F0145A 0%,
+    #EF8080 30%
 );
