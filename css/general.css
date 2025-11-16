@@ -9,7 +9,7 @@ body {
 }
 
 .publications {
-  background-color: pink;
+  background-color: #F5F5FA;
 }
 
 body {
@@ -407,6 +407,10 @@ h1, h2, p, a {
   margin-top: 43px;
 }
 
+.clients {
+  padding-bottom: 60px;
+}
+
 .clients__container {
   max-width: 1720px;
   margin: 0 auto;
@@ -428,6 +432,9 @@ h1, h2, p, a {
   margin-bottom: 30px;
 }
 
+.publications {
+  padding: 30px 0px;
+}
 .publications__container {
   max-width: 1600px;
   margin: 0 auto;
@@ -436,7 +443,7 @@ h1, h2, p, a {
   margin-bottom: 10px;
 }
 .publications__title {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .publications__grid {
   display: grid;
@@ -474,6 +481,7 @@ h1, h2, p, a {
   line-height: 100%;
   font-weight: 700;
   color: #24A3FF;
+  margin-top: 34px;
 }
 
 .pub-card__date {
@@ -489,6 +497,9 @@ h1, h2, p, a {
   font-size: 14px;
   line-height: 22px;
   color: black;
+  border-top: 4px solid #E6E6F0;
+  margin-top: 1.5px;
+  padding-top: 12.5px;
 }
 
 .publications__title {

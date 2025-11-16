@@ -205,6 +205,10 @@
     margin-top: 43px;
 }
 
+.clients {
+    padding-bottom: 60px;
+}
+
 
 .clients__container {
     max-width: 1720px;
@@ -229,6 +233,9 @@
 }
 
 .publications {
+
+    padding: 30px 0px;
+
     &__container {
         max-width: 1600px;
         margin: 0 auto;
@@ -239,7 +246,7 @@
     }
 
     &__title {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
     &__grid {
@@ -279,6 +286,7 @@
     line-height: 100%;
     font-weight: $fw-bold;
     color: $color-aqua;
+    margin-top: 34px;
 }
 
 .pub-card__date {
@@ -294,6 +302,10 @@
     font-size: $fs-s;
     line-height: 22px;
     color: black;
+
+    border-top: 4px solid #E6E6F0; 
+    margin-top: 1.5px;               
+    padding-top: 12.5px;               
 }
 
 .publications__title {
