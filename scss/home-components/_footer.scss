@@ -1,0 +1,77 @@
+@use "../home-common/variables" as *;
+@use "../home-common/mixins" as *;
+
+.footer__container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-top: 34px;
+    padding-bottom: 40px;
+    border-top: 2px solid $bc-line-footer;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__top-left {
+    display: flex;
+    gap: 26px;
+}
+
+.footer__contacts {
+    display: flex;
+    align-items: center;
+    margin-top: 21px;
+}
+
+.footer__address {
+    color: $street-footer;
+    font-size: $fs-regular;
+    position: relative;
+
+    &::before {
+        @include footer-dot;
+        right: -16px;
+    }
+}
+
+.footer__map-link {
+    font-weight: $fw-bold;
+    font-size: $fs-xs;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $color-aqua;
+}
+
+.footer__phone {
+    font-weight: $fw-bold;
+    color: $phone-footer;
+    font-size: $fs-regular;
+    line-height: 100%;
+    padding: 0 26px;
+
+    position: relative;
+
+    &::before {
+        @include footer-dot;
+        right: 10px;
+    }
+
+    &::after {
+        @include footer-dot;
+        left: 10px;
+    }
+}
+
+.footer__email {
+    font-weight: $fw-bold;
+    color: $color-aqua;
+    line-height: 100%;
+}
+
+.footer__copyright {
+    color: $color-grey;
+    font-size: $fs-regular;
+    line-height: 100%;
+}

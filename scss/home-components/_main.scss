@@ -1,6 +1,39 @@
 @use "../home-common/variables" as *;
 @use "../home-common/mixins" as *;
 
+.main__bg {
+    position: relative;
+
+    
+    &::after {
+        content: "";
+        display: block;
+        width: 97.9%;
+        height: 10px;
+        position: absolute;
+        background-color: #CACADB;
+        bottom: -10px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        width: 96%;
+        height: 10px;
+        position: absolute;
+        background-color: #E7E7F2;
+        bottom: -20px;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
 .main__services-left {
     position: relative;
 
@@ -234,7 +267,7 @@
 
 .publications {
 
-    padding: 30px 0px;
+    padding: 30px 0;
 
     &__container {
         max-width: 1600px;
@@ -259,6 +292,7 @@
 .pub-card {
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 
 .pub-card__image img {
@@ -270,6 +304,8 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 0px 30px;
+    padding-bottom: 30px;
 }
 
 .publications__label {
