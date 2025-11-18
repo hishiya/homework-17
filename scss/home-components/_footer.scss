@@ -75,3 +75,15 @@
     font-size: $fs-regular;
     line-height: 100%;
 }
+
+@media (max-width: 1680px) {
+    .footer__container {
+        max-width: 1320px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .footer__container {
+        max-width: 904px;
+    }
+}

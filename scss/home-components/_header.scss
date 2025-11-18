@@ -158,3 +158,27 @@ h1, h2, p, a{
     }
 }
 
+@media (max-width: 1680px) {
+    .home__container {
+        max-width: 1320px;
+    }
+
+    .home {
+        padding-bottom: 750px;
+    }
+
+    .home__hero-logo {
+        max-width: 697px;
+    }
+}
+
+
+@media (max-width: 1400px) {
+    .home__container {
+        max-width: 904px;
+    }
+
+    .home__hero-logo {
+        max-width: 670px;
+    }
+}

@@ -4,7 +4,6 @@
 .main__bg {
     position: relative;
 
-    
     &::after {
         content: "";
         display: block;
@@ -49,8 +48,6 @@
     }
 }
 
-
-
 .main__container-services {
     max-width: 1360px;
     margin: 0 auto;
@@ -75,7 +72,6 @@
         color: $bc-active-button;
     }
 }
-
 
 .main__services-list {
     display: flex;
@@ -161,12 +157,11 @@
 
 .review__card {
     display: grid;
-    grid-template-columns: auto 1fr; // фото + контент
+    grid-template-columns: auto 1fr;
     align-items: start;
     gap: 30px;
     border-radius: 12px;
-
-    background: #F5F5FA; // тимчасово білий, як у макеті
+    background: #F5F5FA;
 }
 
 .review__photo img {
@@ -198,7 +193,7 @@
 }
 
 .review__dot--active {
-    background: $color-aqua; // тимчасово синій як у макеті
+    background: $color-aqua;
 }
 
 .review__label {
@@ -242,7 +237,6 @@
     padding-bottom: 60px;
 }
 
-
 .clients__container {
     max-width: 1720px;
     margin: 0 auto;
@@ -253,7 +247,6 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
 }
-
 
 .clients__title {
     text-align: center;
@@ -266,7 +259,6 @@
 }
 
 .publications {
-
     padding: 30px 0;
 
     &__container {
@@ -338,10 +330,9 @@
     font-size: $fs-s;
     line-height: 22px;
     color: black;
-
-    border-top: 4px solid #E6E6F0; 
-    margin-top: 1.5px;               
-    padding-top: 12.5px;               
+    border-top: 4px solid #E6E6F0;
+    margin-top: 1.5px;
+    padding-top: 12.5px;
 }
 
 .publications__title {
@@ -351,4 +342,44 @@
     -webkit-text-fill-color: transparent;
     font-size: $fs-xxl;
     font-weight: $fw-bold;
+}
+
+@media (max-width: 1680px) {
+    .main__container-services { max-width: 1080px; }
+    .advantages__container { max-width: 1320px; }
+    .review__container { max-width: 1320px; }
+    .publications__container { max-width: 1320px; }
+    .clients__container { max-width: 1440px; }
+
+    .img-clients {
+        max-width: 360px;
+        height: 120px;
+    }
+
+    .img-publications {
+        min-width: 420px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .main__container-services { max-width: 904px; }
+    .advantages__container { max-width: 904px; }
+    .review__container { max-width: 904px; }
+    .publications__container { max-width: 904px; }
+    .clients__container { max-width: 1024px; }
+
+    .img-clients {
+        max-width: 256px;
+        height: 120px;
+    }
+
+    .img-publications {
+        min-width: 281px;
+        height: 200px;
+    }
+
+    .review__title {
+        line-height: 138%;
+    }
 }

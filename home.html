@@ -166,7 +166,13 @@
             <div class="review__container">
                 <div class="review__card">
                     <div class="review__photo">
-                        <img src="./images/review/person.jpg" alt="Олександр Олександровський">
+                        <picture>
+                            <source srcset="./images/adaptive/1400px/person.jpg" media="(max-width: 1400px)">
+                            <source srcset="./images/adaptive/1680px/person.jpg" media="(max-width: 1680px)">
+                            <img src="./images/review/person.jpg" alt="Олександр Олександровський"
+                                class="partner-person">
+                        </picture>
+
                     </div>
 
                     <div class="review__content">
@@ -195,40 +201,40 @@
 
                 <div class="clients__grid">
                     <div class="clients__item clients__item--hillel">
-                        <img src="./images/clients/Hillel.png" alt="Hillel IT School">
+                        <img class="img-clients" src="./images/clients/Hillel.png" alt="Hillel IT School">
                     </div>
                     <div class="clients__item clients__item--wannabiz">
-                        <img src="./images/clients/wannabiz.png" alt="WannaBiz">
+                        <img class="img-clients" src="./images/clients/wannabiz.png" alt="WannaBiz">
                     </div>
                     <div class="clients__item clients__item--tapgerine">
-                        <img src="./images/clients/tapgerine.png" alt="Tapgerine">
+                        <img class="img-clients" src="./images/clients/tapgerine.png" alt="Tapgerine">
                     </div>
                     <div class="clients__item clients__item--3dlook">
-                        <img src="./images/clients/3dlook.png" alt="3D Look">
+                        <img class="img-clients" src="./images/clients/3dlook.png" alt="3D Look">
                     </div>
                     <div class="clients__item clients__item--orangear">
-                        <img src="./images/clients/orangear.png" alt="Orangear">
+                        <img class="img-clients" src="./images/clients/orangear.png" alt="Orangear">
                     </div>
                     <div class="clients__item clients__item--adtelligent">
-                        <img src="./images/clients/adtelligent.png" alt="Adtelligent">
+                        <img class="img-clients" src="./images/clients/adtelligent.png" alt="Adtelligent">
                     </div>
                     <div class="clients__item clients__item--clickky">
-                        <img src="./images/clients/Clickky.png" alt="Clickky">
+                        <img class="img-clients" src="./images/clients/Clickky.png" alt="Clickky">
                     </div>
                     <div class="clients__item clients__item--ecoleasing">
-                        <img src="./images/clients/ecoleasing.png" alt="Eco Leasing">
+                        <img class="img-clients" src="./images/clients/ecoleasing.png" alt="Eco Leasing">
                     </div>
                     <div class="clients__item clients__item--infratek">
-                        <img src="./images/clients/InfraTek.png" alt="InfraTek">
+                        <img class="img-clients" src="./images/clients/InfraTek.png" alt="InfraTek">
                     </div>
                     <div class="clients__item clients__item--citypark">
-                        <img src="./images/clients/city.png" alt="Сити-парк">
+                        <img class="img-clients" src="./images/clients/city.png" alt="Сити-парк">
                     </div>
                     <div class="clients__item clients__item--artprint">
-                        <img src="./images/clients/artprint.png" alt="Art-print Studio">
+                        <img class="img-clients" src="./images/clients/artprint.png" alt="Art-print Studio">
                     </div>
                     <div class="clients__item clients__item--ultimatecard">
-                        <img src="./images/clients/ultimate-card.png" alt="Ultimate Card">
+                        <img class="img-clients" src="./images/clients/ultimate-card.png" alt="Ultimate Card">
                     </div>
                 </div>
             </div>
@@ -245,7 +251,7 @@
 
                     <article class="pub-card">
                         <div class="pub-card__image">
-                            <img src="./images/publications/pic-1.png" alt="Equity associate">
+                            <img class="img-publications" src="./images/publications/pic-1.png" alt="Equity associate">
                         </div>
                         <div class="pub-card__content">
                             <h3 class="pub-card__title">Equity associate</h3>
@@ -259,7 +265,7 @@
 
                     <article class="pub-card">
                         <div class="pub-card__image">
-                            <img src="./images/publications/pic-2.png" alt="GDPR article">
+                            <img class="img-publications" src="./images/publications/pic-2.png" alt="GDPR article">
                         </div>
                         <div class="pub-card__content">
                             <h3 class="pub-card__title">
@@ -276,7 +282,8 @@
 
                     <article class="pub-card">
                         <div class="pub-card__image">
-                            <img src="./images/publications/pic-3.png" alt="Millennial Testament">
+                            <img class="img-publications" src="./images/publications/pic-3.png"
+                                alt="Millennial Testament">
                         </div>
                         <div class="pub-card__content">
                             <h3 class="pub-card__title">Millennial Testament</h3>
