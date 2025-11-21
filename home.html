@@ -15,7 +15,9 @@
         <div class="home__container">
             <div class="home__container-img">
                 <img src="./images/Logo.svg" alt="Головна">
+                <button class="burger-menu" aria-label="Menu"></button>
             </div>
+
 
             <div class="home__right-side">
                 <div class="home__container-information">
@@ -167,8 +169,11 @@
                 <div class="review__card">
                     <div class="review__photo">
                         <picture>
+                            <source srcset="./images/adaptive/768px/person.jpg" media="(max-width: 768px)">
+                            <source srcset="./images/adaptive/992px/person.jpg" media="(max-width: 992px)">
                             <source srcset="./images/adaptive/1400px/person.jpg" media="(max-width: 1400px)">
                             <source srcset="./images/adaptive/1680px/person.jpg" media="(max-width: 1680px)">
+
                             <img src="./images/review/person.jpg" alt="Олександр Олександровський"
                                 class="partner-person">
                         </picture>
