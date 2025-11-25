@@ -1,7 +1,16 @@
-body {
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden; /* Забороняє горизонтальний скрол на рівні сторінки */
+    width: 100%;
     margin: 0;
     padding: 0;
-    line-height: 100%;
 }
 
 button {

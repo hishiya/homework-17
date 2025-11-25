@@ -1,0 +1,63 @@
+@use "../team-common/variables" as *; 
+@use "../team-common/mixins" as *;
+
+.footer {
+    background-color: #F5F5FA;
+}
+
+.footer__container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 30px 0px;
+}
+
+.footer__above {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__left {
+    display: flex;
+    gap: 26px;
+}
+
+.footer__below {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin-top: 21px;
+}
+
+.footer__street {
+    color: #323264;
+    line-height: 100%;
+    @include footer-dot(right);
+}
+
+.footer__map {
+    color: #24A3FF;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.footer__privacy {
+    color: #B3B3BA;
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+
+.footer__phone {
+    color: #46466E;
+    line-height: 100%;
+    font-weight: 700;
+    @include footer-dot(right);
+    @include footer-dot(left);
+}
+
+.footer__email {
+    color: #24A3FF;
+    font-weight: 700;
+    line-height: 100%;
+}

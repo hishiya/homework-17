@@ -1,0 +1,81 @@
+@use "../team-common/variables" as *; 
+@use "../team-common/mixins" as *;
+
+.header {
+    max-width: $container-max-width;
+    margin: 0 auto;
+    padding-top: 50px;
+    
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        display: grid;
+    }
+
+    &__right-top {
+        @include flex-v-center(18px);
+    }
+
+    &__languages {
+        @include flex-v-center(0px);
+    }
+
+    &__language-changer {
+        width: 33px;
+        height: 25px;
+        border-radius: $radius-sm;
+        border: 0px solid;
+        background-color: transparent;
+        letter-spacing: 1px;
+        color: $color-text-main;
+        font-weight: $font-weight-bold;
+        font-size: 12px;
+        line-height: 100%;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s; 
+    }
+
+    &__language-active {
+        background-color: $color-primary;
+        color: $color-white;
+    }
+
+    &__street {
+        color: $color-text-main;
+        line-height: 100%;
+        
+        @include decorative-dot(right);
+        @include decorative-dot(left);
+    }
+
+    &__phone {
+        color: $color-text-main;
+        line-height: 100%;
+        font-weight: $font-weight-bold;
+        
+        @include decorative-dot(right);
+    }
+
+    &__list {
+        @include flex-v-center(15px);
+        justify-content: end;
+        align-items: flex-start;
+        margin-top: 16px;
+    }
+}
+
+.item {
+    color: $color-secondary;
+    font-weight: $font-weight-bold;
+    line-height: 100%;
+    text-decoration: none;
+
+    &-active {
+        color: $color-primary;
+        border-bottom: 2px solid $color-primary;
+        padding-bottom: 4px;
+    }
+}

@@ -1,0 +1,58 @@
+@use "variables" as *;
+
+@mixin flex-v-center($gap: 0) {
+    display: flex;
+    align-items: center;
+    gap: $gap;
+}
+
+@mixin decorative-dot($position: right) {
+    position: relative;
+
+    &::#{if($position == 'right', 'after', 'before')} {
+        content: "";
+        display: block;
+        width: 6px;
+        height: 6px;
+        background-color: $color-bg-dot;
+        border-radius: $radius-circle;
+        position: absolute;
+        top: 5px;
+        
+        @if $position == 'right' {
+            right: -12px;
+        } @else {
+            left: -12px;
+        }
+    }
+}
+
+@mixin footer-dot($position: right) {
+    position: relative;
+
+    &::#{if($position == 'right', 'after', 'before')} {
+        content: "";
+        display: block;
+        width: 6px;
+        height: 6px;
+        background-color: #B3B3BA;
+        border-radius: $radius-circle;
+        position: absolute;
+        top: 4px;
+        
+        @if $position == 'right' {
+            right: -16px;
+        } @else {
+            left: -16px;
+        }
+    }
+}
+
+
+@mixin text-gradient($color-from, $color-to) {
+    background: linear-gradient(90deg, $color-from 0%, $color-to 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}

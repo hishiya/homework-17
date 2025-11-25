@@ -21,10 +21,17 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-body {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden; /* Забороняє горизонтальний скрол на рівні сторінки */
+  width: 100%;
   margin: 0;
   padding: 0;
-  line-height: 100%;
 }
 
 button {
@@ -694,6 +701,7 @@ a {
   background: linear-gradient(90deg, #F0145A 0%, #F0145A 45%, #EF8080 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  word-break: break-word;
 }
 
 .review__name {
