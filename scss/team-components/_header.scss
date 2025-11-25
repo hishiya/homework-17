@@ -79,3 +79,61 @@
         padding-bottom: 4px;
     }
 }
+
+@media (max-width: 1680px) {
+    .header {
+        max-width: 1320px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .header {
+        max-width: 904px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        max-width: 648px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        max-width: 100%;
+    }
+
+    .header__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__list {
+        display: none;
+    }
+
+    .header__content {
+        order: -1; 
+    }
+
+    .header .header__languages {
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+    .header .header__phone {
+        margin-left: auto;
+        margin-right: 0;
+        padding: 0;
+
+        &::after, &::before {
+            display: none;
+            content: none;
+        }
+    }
+
+    .header__street,
+    .facebook-img {
+        display: none;
+    }
+}

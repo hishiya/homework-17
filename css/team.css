@@ -94,6 +94,26 @@
   line-height: 100%;
 }
 
+@media (max-width: 1680px) {
+  .footer__container {
+    max-width: 1320px;
+  }
+}
+@media (max-width: 1400px) {
+  .footer__container {
+    max-width: 904px;
+  }
+}
+@media (max-width: 992px) {
+  .footer__container {
+    max-width: 648px;
+  }
+}
+@media (max-width: 768px) {
+  .footer__container {
+    max-width: 100%;
+  }
+}
 .header {
   max-width: 1600px;
   margin: 0 auto;
@@ -202,6 +222,53 @@
   padding-bottom: 4px;
 }
 
+@media (max-width: 1680px) {
+  .header {
+    max-width: 1320px;
+  }
+}
+@media (max-width: 1400px) {
+  .header {
+    max-width: 904px;
+  }
+}
+@media (max-width: 992px) {
+  .header {
+    max-width: 648px;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    max-width: 100%;
+  }
+  .header__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__list {
+    display: none;
+  }
+  .header__content {
+    order: -1;
+  }
+  .header .header__languages {
+    margin-right: auto;
+    margin-left: 0;
+  }
+  .header .header__phone {
+    margin-left: auto;
+    margin-right: 0;
+    padding: 0;
+  }
+  .header .header__phone::after, .header .header__phone::before {
+    display: none;
+    content: none;
+  }
+  .header__street,
+  .facebook-img {
+    display: none;
+  }
+}
 .team {
   margin: 60px 0;
 }
@@ -291,6 +358,64 @@
   border-color: #F0145A;
 }
 
+@media (max-width: 1680px) {
+  .team__container-title {
+    max-width: 1080px;
+  }
+  .team__container {
+    max-width: 1320px;
+  }
+  .team-card__image {
+    max-width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width: 1400px) {
+  .team__container-title {
+    max-width: 664px;
+  }
+  .team__container {
+    max-width: 904px;
+  }
+  .team-card__image {
+    max-width: 261px;
+    height: 400px;
+  }
+}
+@media (max-width: 992px) {
+  .team__container-title {
+    max-width: 648px;
+  }
+  .team__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .team__container {
+    max-width: 648px;
+  }
+  .team-card__image {
+    max-width: 291px;
+    height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .team__container-title {
+    max-width: 100%;
+  }
+  .team__container {
+    max-width: 100%;
+  }
+  .team-card__image {
+    max-width: 315px;
+    height: 300px;
+  }
+  .team__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .team-card {
+    display: grid;
+    justify-content: center;
+  }
+}
 body {
   font-family: "Montserrat", sans-serif;
 }

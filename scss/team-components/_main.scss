@@ -1,4 +1,4 @@
-@use "../team-common/variables" as *; 
+@use "../team-common/variables" as *;
 @use "../team-common/mixins" as *;
 
 .team {
@@ -86,5 +86,78 @@
         &::before {
             border-color: #F0145A;
         }
+    }
+}
+
+@media (max-width: 1680px) {
+    .team__container-title {
+        max-width: 1080px;
+    }
+
+    .team__container {
+        max-width: 1320px;
+    }
+
+    .team-card__image {
+        max-width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .team__container-title {
+        max-width: 664px;
+    }
+
+    .team__container {
+        max-width: 904px;
+    }
+
+    .team-card__image {
+        max-width: 261px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 992px) {
+    .team__container-title {
+        max-width: 648px;
+    }
+
+    .team__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team__container {
+        max-width: 648px;
+    }
+
+    .team-card__image {
+        max-width: 291px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .team__container-title {
+        max-width: 100%;
+    }
+
+    .team__container {
+        max-width: 100%;
+    }
+
+    .team-card__image {
+        max-width: 315px;
+        height: 300px;
+    }
+
+    .team__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .team-card {
+        display: grid;
+        justify-content: center;
     }
 }
