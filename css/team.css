@@ -104,9 +104,28 @@
     max-width: 904px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 992px) and (max-width: 992px) {
   .footer__container {
-    max-width: 648px;
+    max-width: 398px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__above {
+    display: contents;
+  }
+  .footer__left {
+    order: 1;
+    display: flex;
+    align-items: center;
+  }
+  .footer__below {
+    order: 2;
+    display: flex;
+    align-items: center;
+  }
+  .footer__privacy {
+    order: 3;
+    text-align: center;
   }
 }
 @media (max-width: 768px) {
@@ -236,6 +255,50 @@
   .header {
     max-width: 648px;
   }
+  .header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__content {
+    display: contents;
+  }
+  .header__right-top {
+    order: 1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .logo {
+    order: 2;
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .header__right-bottom {
+    order: 3;
+    width: 100%;
+  }
+  .header__list {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    justify-content: start;
+    margin-top: 0px;
+  }
+  .header .header__languages {
+    margin: 0 0 10px 0;
+  }
+  .header .header__phone {
+    margin: 0;
+    padding: 0;
+  }
+  .header .header__phone::after,
+  .header .header__phone::before {
+    display: none;
+    content: none;
+  }
 }
 @media (max-width: 768px) {
   .header {
@@ -306,7 +369,6 @@
   margin-top: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .team-card__image {
