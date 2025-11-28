@@ -43,6 +43,29 @@
     }
 }
 
+@mixin footer-dot($color, $position: right, $top: 5px) {
+    position: relative;
+
+    &::#{if($position == 'right', 'after', 'before')} {
+        content: "";
+        display: block;
+        width: 6px;
+        height: 6px;
+        background-color: $color;
+        border-radius: $radius-circle;
+        position: absolute;
+        top: $top;
+        
+        @if $position == 'right' {
+            right: -16px;
+        } @else {
+            left: -16px;
+        }
+    }
+}
+
+
+
 @mixin text-gradient($color-from, $color-to) {
     background: linear-gradient(90deg, $color-from 0%, $color-to 100%);
     -webkit-background-clip: text;

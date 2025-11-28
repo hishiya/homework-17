@@ -38,8 +38,8 @@
   background-color: #B3B3BA;
   border-radius: 50%;
   position: absolute;
-  top: 4px;
-  right: -12px;
+  top: 5px;
+  right: -16px;
 }
 
 .footer__map {
@@ -70,8 +70,8 @@
   background-color: #B3B3BA;
   border-radius: 50%;
   position: absolute;
-  top: 4px;
-  right: -12px;
+  top: 5px;
+  right: -16px;
 }
 .footer__phone {
   position: relative;
@@ -84,8 +84,8 @@
   background-color: #B3B3BA;
   border-radius: 50%;
   position: absolute;
-  top: 4px;
-  left: -12px;
+  top: 5px;
+  left: -16px;
 }
 
 .footer__email {

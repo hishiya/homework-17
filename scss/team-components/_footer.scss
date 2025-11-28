@@ -31,7 +31,7 @@
 .footer__street {
     color: $color-text-dark;
     line-height: 100%;
-    @include decorative-dot($color-text-main, right, 4px);
+    @include footer-dot($color-text-main, right);
 }
 
 .footer__map {
@@ -52,8 +52,8 @@
     color: $color-text-muted;
     line-height: 100%;
     font-weight: 700;
-    @include decorative-dot($color-text-main, right, 4px);
-    @include decorative-dot($color-text-main, left, 4px);
+    @include footer-dot($color-text-main, right);
+    @include footer-dot($color-text-main, left);
 }
 
 .footer__email {
@@ -141,8 +141,12 @@
     }
 
     .footer__phone::after {
-        display: none;
+        display: none;        
     }
+
+
+
+    
 
     .footer__phone::before {
         display: none;
