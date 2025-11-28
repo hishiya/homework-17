@@ -15,11 +15,11 @@
     font-size: 38px;
     line-height: 1.2;
     font-weight: 700;
-    @include text-gradient($color-primary, #EF8080);
+    @include text-gradient($color-primary, $color-accent-pink);
 }
 
 .team__container {
-    max-width: 1600px;
+    max-width: $container-max-width;
     margin: 0 auto;
 }
 
@@ -50,22 +50,16 @@
 .team-card__role {
     font-size: 14px;
     line-height: 22px;
-    color: #B3B3BA;
+    color: $color-text-main;
 }
 
 .name-active:hover {
-    color: #F0145A;
+    color: $color-primary;
     cursor: pointer;
 }
 
 .team-card__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    background-color: #EDEDF7;
-    border-radius: 50%;
+    @include circle-icon(32px, $color-bg-icon);
     transition: background-color 0.3s ease;
 
     &::before {
@@ -73,22 +67,22 @@
         display: block;
         width: 9px;
         height: 9px;
-        border-top: 2px solid #24A3FF;
-        border-right: 2px solid #24A3FF;
+        border-top: 2px solid $color-secondary;
+        border-right: 2px solid $color-secondary;
         transform: rotate(45deg);
         margin-left: -5px;
     }
 
     &:hover {
-        background-color: #E6E6F0;
+        background-color: $color-bg-icon-hover;
 
         &::before {
-            border-color: #F0145A;
+            border-color: $color-primary;
         }
     }
 }
 
-@media (max-width: 1680px) {
+@include mq($bp-desktop-l) {
     .team__container-title {
         max-width: 1080px;
     }
@@ -103,7 +97,7 @@
     }
 }
 
-@media (max-width: 1400px) {
+@include mq($bp-desktop-m) {
     .team__container-title {
         max-width: 664px;
     }
@@ -118,7 +112,7 @@
     }
 }
 
-@media (max-width: 992px) {
+@include mq($bp-tablet) {
     .team__container-title {
         max-width: 648px;
     }
@@ -137,7 +131,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@include mq($bp-mobile) {
     .team__container-title {
         max-width: 100%;
     }

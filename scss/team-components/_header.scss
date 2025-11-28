@@ -1,11 +1,11 @@
-@use "../team-common/variables" as *; 
+@use "../team-common/variables" as *;
 @use "../team-common/mixins" as *;
 
 .header {
     max-width: $container-max-width;
     margin: 0 auto;
     padding-top: 50px;
-    
+
     &__container {
         display: flex;
         justify-content: space-between;
@@ -35,7 +35,7 @@
         font-size: 12px;
         line-height: 100%;
         cursor: pointer;
-        transition: background-color 0.3s, color 0.3s; 
+        transition: background-color 0.3s, color 0.3s;
     }
 
     &__language-active {
@@ -46,17 +46,17 @@
     &__street {
         color: $color-text-main;
         line-height: 100%;
-        
-        @include decorative-dot(right);
-        @include decorative-dot(left);
+
+        @include decorative-dot($color-bg-dot, right);
+        @include decorative-dot($color-bg-dot, left);
     }
 
     &__phone {
         color: $color-text-main;
         line-height: 100%;
         font-weight: $font-weight-bold;
-        
-        @include decorative-dot(right);
+
+        @include decorative-dot($color-bg-dot, right);
     }
 
     &__list {
@@ -80,19 +80,19 @@
     }
 }
 
-@media (max-width: 1680px) {
+@include mq($bp-desktop-l) {
     .header {
         max-width: 1320px;
     }
 }
 
-@media (max-width: 1400px) {
+@include mq($bp-desktop-m) {
     .header {
         max-width: 904px;
     }
 }
 
-@media (max-width: 992px) {
+@include mq($bp-tablet) {
     .header {
         max-width: 648px;
     }
@@ -135,25 +135,26 @@
         margin-top: 0px;
     }
 
-    .header .header__languages {
-        margin: 0 0 10px 0;
-    }
-
     .header .header__phone {
         margin: 0;
         padding: 0;
     }
 
-    .header .header__phone::after, 
+    .header .header__phone::after,
     .header .header__phone::before {
         display: none;
         content: none;
     }
+
+    .burger-menu {
+        display: none;
+    }
 }
 
-@media (max-width: 768px) {
+@include mq($bp-mobile) {
     .header {
         max-width: 100%;
+        padding: 0px;
     }
 
     .header__container {
@@ -161,32 +162,75 @@
         flex-direction: column;
     }
 
+    .header__right-top {
+        background-color: $color-bg-light;
+        
+        gap: 0px;
+        box-sizing: border-box; 
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
     .header__list {
         display: none;
     }
 
     .header__content {
-        order: -1; 
+        order: -1;
     }
 
     .header .header__languages {
         margin-right: auto;
         margin-left: 0;
+        padding-left: 15px;
     }
 
     .header .header__phone {
-        margin-left: auto;
-        margin-right: 0;
-        padding: 0;
+        padding-right: 15px;
 
-        &::after, &::before {
+        &::after,
+        &::before {
             display: none;
             content: none;
         }
     }
 
+    a img {
+        padding-left: 15px;
+    }
+
     .header__street,
     .facebook-img {
         display: none;
+    }
+
+    .logo {
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 6px;
+        width: 32px;
+        height: 32px;
+        background-color: transparent;
+        cursor: pointer;
+        padding: 0px;
+        margin-right: 15px;
+        outline: none;
+        border: 0px;
+    }
+
+    .line {
+        max-width: 18px;
+        height: 3px;
+        background-color: $color-burger-line;
+        display: block;
+        margin-left: 7px;
     }
 }

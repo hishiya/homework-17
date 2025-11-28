@@ -6,7 +6,23 @@
     gap: $gap;
 }
 
-@mixin decorative-dot($position: right) {
+@mixin mq($width) {
+    @media (max-width: $width) {
+        @content;
+    }
+}
+
+@mixin circle-icon($size, $bg-color) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: $size;
+    height: $size;
+    background-color: $bg-color;
+    border-radius: $radius-circle;
+}
+
+@mixin decorative-dot($color, $position: right, $top: 5px) {
     position: relative;
 
     &::#{if($position == 'right', 'after', 'before')} {
@@ -14,10 +30,10 @@
         display: block;
         width: 6px;
         height: 6px;
-        background-color: $color-bg-dot;
+        background-color: $color;
         border-radius: $radius-circle;
         position: absolute;
-        top: 5px;
+        top: $top;
         
         @if $position == 'right' {
             right: -12px;
@@ -26,28 +42,6 @@
         }
     }
 }
-
-@mixin footer-dot($position: right) {
-    position: relative;
-
-    &::#{if($position == 'right', 'after', 'before')} {
-        content: "";
-        display: block;
-        width: 6px;
-        height: 6px;
-        background-color: #B3B3BA;
-        border-radius: $radius-circle;
-        position: absolute;
-        top: 4px;
-        
-        @if $position == 'right' {
-            right: -16px;
-        } @else {
-            left: -16px;
-        }
-    }
-}
-
 
 @mixin text-gradient($color-from, $color-to) {
     background: linear-gradient(90deg, $color-from 0%, $color-to 100%);
